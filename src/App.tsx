@@ -1,35 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Styled from 'styled-components';
 
-function App() {
-  const [count, setCount] = useState(0)
+const Wrapper = Styled.div`
+  width: 70%;
+  margin: 0 auto;
+`;
 
+const StyledDiv = Styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+`;
+
+const DivRow = Styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+const DivCol = Styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const StyledImg = Styled.img`
+  width: 15vw;
+  height: auto;
+  margin: 1% 5%;
+`;
+
+const StyledTitle = Styled.img`
+  width: 45%;
+  height: auto;
+  margin: 0% 0% 5% 0%;
+`;
+
+const StyledSubtitle = Styled.img`
+  width: 25%;
+  height: auto;
+`;
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Wrapper>
+      <StyledDiv>
+        <StyledTitle src='./title.jpg' alt='main title' />
+        <DivRow>
+          <DivCol>
+            <StyledImg src='./tortured_moon.jpg' alt='tortured moon' />
+            <StyledSubtitle src='./poems_title.jpg' alt='poems title' />
+          </DivCol>
+          
+          <DivCol>
+            <StyledImg src='./three_ghosts.jpg' alt='three ghosts' />
+            <StyledSubtitle src='./prologue_title.jpg' alt='prologue title' />
+          </DivCol>
+        </DivRow>
+      </StyledDiv>
+    </Wrapper>
+  );
 }
-
-export default App
