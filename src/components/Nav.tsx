@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const StyledNav = Styled.nav`
     width: 100%;
-    height: 100px;
+    height: 10vh;
     display: flex;
     align-items: center;
 `;
@@ -26,7 +26,8 @@ const StyledUl = Styled.ul`
 `;
 
 const StyledLi = Styled.li`
-    padding: 10px;
+    padding: 0 20px;
+    text-align: left;
 `;
 
 export default function Nav() {
@@ -39,7 +40,7 @@ export default function Nav() {
 
                 <StyledDiv>
                     <StyledLi>
-                        <Link to='/cards'>Poems</Link>
+                        <Link to='/poem1'>Poems</Link>
                     </StyledLi>
                     <StyledLi>
                         <Link to='/cards'>Cards</Link>

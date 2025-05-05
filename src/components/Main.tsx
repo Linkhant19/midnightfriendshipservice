@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Cards from './Cards';
 import Home from './Home';
+import PoemOne from './PoemOne';
 
 export default function Main() {
     return (
@@ -12,6 +13,7 @@ export default function Main() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/cards' element={<Cards />} />
+                <Route path='/poem1' element={<PoemOne />} />
             </Routes>
         </>
     );
