@@ -3,6 +3,17 @@
 import Styled from 'styled-components';
 import Credits from './Credits';
 
+const StyledDiv = Styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+`;
+
 const StyledTitle = Styled.h1`
     text-align: right;
     color: #08415C;
@@ -33,7 +44,7 @@ const StyledChorus = Styled.p`
 
 export default function PoemOne() {
     return (
-        <div>
+        <StyledDiv>
             <StyledTitle>Distant Minds</StyledTitle>
 
             <StyledStanza>
@@ -162,6 +173,6 @@ export default function PoemOne() {
             </StyledStanza>
 
             <Credits />
-        </div>
+        </StyledDiv>
     );
 }
