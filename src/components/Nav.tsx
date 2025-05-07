@@ -40,7 +40,7 @@ export default function Nav() {
 
                 <StyledDiv>
                     <StyledLi>
-                        <Link to='/poem1'>Poems</Link>
+                        <Link to='/contents'>Poems</Link>
                     </StyledLi>
                     <StyledLi>
                         <Link to='/cards'>Cards</Link>

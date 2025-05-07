@@ -18,6 +18,7 @@ const StyledTitle = Styled.h1`
     text-align: right;
     color: #08415C;
     margin: 30px 10px;
+    font-size: 3.2em;
 `;
 
 const StyledStanza = Styled.p`
