@@ -163,6 +163,10 @@ export default function PoemOne() {
                 if you would just let me in <br />
             </StyledChorus>
 
+            <StyledChorus>
+                Just let me in <br />
+            </StyledChorus>
+
             <StyledStanzaTwo>
                 If I open the door in my mind <br />
                 would you leave this time? <br />
