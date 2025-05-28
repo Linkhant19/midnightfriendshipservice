@@ -85,6 +85,21 @@ export default function Cards() {
             alt: 'card5',
             poem: 'poem5',
         },
+        {
+            img: './cards/card6.png',
+            alt: 'card6',
+            poem: 'poem6',
+        },
+        {
+            img: './cards/card7.png',
+            alt: 'card7',
+            poem: 'poem7',
+        },
+        {
+            img: './cards/card8.png',
+            alt: 'card8',
+            poem: 'poem8',
+        }
     ]
 
     return (
