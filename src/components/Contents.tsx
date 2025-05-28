@@ -28,6 +28,11 @@ export default function Contents() {
             <StyledLi>
                 <Link to='/poem2'>Koreatown</Link>
             </StyledLi>
+
+            {/* link to poem3 */}
+            <StyledLi>
+                <Link to='/poem3'>The Midnight Friendship Service</Link>
+            </StyledLi>
         </StyledDiv>
     );
 }
