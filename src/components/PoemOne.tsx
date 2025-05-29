@@ -21,6 +21,13 @@ const StyledTitle = Styled.h1`
     font-size: 3.2em;
 `;
 
+const StyledSubtitle = Styled.h2`
+    text-align: left;
+    color: #08415C;
+    margin: 30px 10px;
+    font-size: 1.2em;
+`;
+
 const StyledStanza = Styled.p`
     text-align: left;
     color: #08415C;
@@ -43,7 +50,51 @@ const StyledChorus = Styled.p`
     font-size: .8em;
 `;
 
+const CardCollection = Styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const StyledCard = Styled.div`
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+`;
+
+const StyledImg = Styled.img`
+    width: 100%;
+    display: block;
+`;
+
 export default function PoemOne() {
+    const cards = [
+        {
+            img: './cards/card0.png',
+            alt: 'card1',
+            poem: 'poem1',
+        },
+        {
+            img: './cards/card1.png',
+            alt: 'card1',
+            poem: 'poem1',
+        },
+        {
+            img: './cards/card2.png',
+            alt: 'card2',
+            poem: 'poem2',
+        },
+        {
+            img: './cards/card3.png',
+            alt: 'card3',
+            poem: 'poem3',
+        },
+    ]
     return (
         <StyledDiv>
             <StyledTitle>Distant Minds</StyledTitle>
@@ -178,6 +229,22 @@ export default function PoemOne() {
             </StyledStanza>
 
             <Credits />
+
+            <br />
+            <br />
+
+            <hr />
+
+            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <CardCollection>
+                {cards.map((card) => (
+                    <StyledCard key={card.alt}>
+                        <StyledImg src={card.img} alt={card.alt} />
+                    </StyledCard>
+                ))}
+            </CardCollection>
+
+            
         </StyledDiv>
     );
 }
