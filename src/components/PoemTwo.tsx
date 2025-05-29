@@ -44,7 +44,7 @@ export default function PoemTwo() {
             He said, “We discovered a new biome!” <br />
             as you landed in New York City. <br />
             No point in longing for home <br />
-            when you've got some restless company. <br />
+            when you've already got restless company. <br />
         </StyledStanza>
 
         <StyledStanza>
@@ -110,7 +110,14 @@ export default function PoemTwo() {
         </StyledChorus>
 
         <StyledStanza>
-            Ohh… <br />
+            Oh oh oh… <br />
+        </StyledStanza>
+
+        <StyledStanza>
+            Oh oh oh… <br />
+        </StyledStanza>
+
+        <StyledStanza>
             This was the time <br />
             you felt like a child <br />
             you got addicted to <br />
