@@ -104,6 +104,11 @@ export default function Cards() {
             img: './cards/card9.png',
             alt: 'card9',
             poem: 'poem9',
+        },
+        {
+            img: './cards/card10.png',
+            alt: 'card10',
+            poem: 'poem9',
         }
     ]
 
