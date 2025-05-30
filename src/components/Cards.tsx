@@ -2,9 +2,32 @@
 
 import Styled from 'styled-components';
 
+const StyledTitle = Styled.h1`
+    text-align: left;
+    color: #08415C;
+    margin: 50px 45px;
+    margin-bottom: 20px;
+    font-size: 3em;
+`;
+
+const GallaryDiv = Styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const StyledCardContainer = Styled.div`
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    width: 290px;
+    flex-wrap: wrap;
+`;
+
 const StyledCard = Styled.div`
-    width: 250px;
+    width: 100%;
     margin: 20px;
+    margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
@@ -46,10 +69,11 @@ const StyledImg = Styled.img`
     display: block;
 `;
 
-const GallaryDiv = Styled.div`
+const StyledDesc = Styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    color: #08415C;
+    margin-bottom: 25px;
 `;
 
 export default function Cards() {
@@ -63,64 +87,79 @@ export default function Cards() {
         {
             img: './cards/card1.png',
             alt: 'card1',
-            poem: 'poem1',
+            poem: 'poem9',
         },
         {
             img: './cards/card2.png',
             alt: 'card2',
-            poem: 'poem2',
+            poem: 'poem4',
         },
         {
             img: './cards/card3.png',
             alt: 'card3',
-            poem: 'poem3',
+            poem: 'poem4',
         },
         {
             img: './cards/card4.png',
             alt: 'card4',
-            poem: 'poem4',
+            poem: 'poem9',
         },
         {
             img: './cards/card5.png',
             alt: 'card5',
-            poem: 'poem5',
+            poem: 'poem2',
         },
         {
             img: './cards/card6.png',
             alt: 'card6',
-            poem: 'poem6',
+            poem: 'poem3',
         },
         {
             img: './cards/card7.png',
             alt: 'card7',
-            poem: 'poem7',
+            poem: 'poem3',
         },
         {
             img: './cards/card8.png',
             alt: 'card8',
-            poem: 'poem8',
+            poem: 'poem3',
         },
         {
             img: './cards/card9.png',
             alt: 'card9',
-            poem: 'poem9',
+            poem: 'poem3',
         },
         {
             img: './cards/card10.png',
             alt: 'card10',
-            poem: 'poem9',
+            poem: 'poem1',
         }
     ]
 
     return (
         <div>
+            <StyledTitle>Cards Collection</StyledTitle>
 
             {/* gallery of all cards in cards mapped */}
             <GallaryDiv>
                 {cards.map((card) => (
-                    <StyledCard key={card.alt}>
-                        <StyledImg src={card.img} alt={card.alt} />
-                    </StyledCard>
+                    <StyledCardContainer>
+                        <StyledCard key={card.alt}>
+                            <StyledImg src={card.img} alt={card.alt} />
+                        </StyledCard>
+
+                        <StyledDesc>
+                            <a
+                                href={card.img} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ color: '#08415C' }}
+                            >
+                                open image
+                            </a>
+                            <a href={`/${card.poem}`}>open poem</a>
+                        </StyledDesc>    
+                    </StyledCardContainer>
                 ))}
             </GallaryDiv>
         </div>
