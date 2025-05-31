@@ -86,7 +86,7 @@ export default function PoemThree() {
 
     return (
         <StyledDiv>
-            <StyledTitle> The Midnight Friendship Service </StyledTitle>
+            <StyledTitle>The Midnight Friendship Service</StyledTitle>
 
             <StyledStanza>
                 Moonlight <br />
@@ -236,7 +236,7 @@ export default function PoemThree() {
             <br />
             <hr />
 
-            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <StyledSubtitle>Cards Collection for THE MIDNIGHT FRIENDSHIP SERVICE</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (
                     <StyledCard key={card.alt}>

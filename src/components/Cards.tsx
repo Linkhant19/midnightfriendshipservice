@@ -81,7 +81,7 @@ export default function Cards() {
         {
             img: './cards/card0.png',
             alt: 'card1',
-            poem: 'poem1',
+            poem: 'Distant Minds',
         },
         {
             img: './cards/card1.png',
@@ -106,12 +106,12 @@ export default function Cards() {
         {
             img: './cards/card5.png',
             alt: 'card5',
-            poem: 'poem2',
+            poem: 'Koreatown',
         },
         {
             img: './cards/card6.png',
             alt: 'card6',
-            poem: 'poem3',
+            poem: 'The Midnight Friendship Service',
         },
         {
             img: './cards/card7.png',
@@ -132,7 +132,17 @@ export default function Cards() {
             img: './cards/card10.png',
             alt: 'card10',
             poem: 'poem1',
-        }
+        },
+        {
+            img: './cards/card11.png',
+            alt: 'card11',
+            poem: 'poem2',
+        },
+        {
+            img: './cards/card12.png',
+            alt: 'card12',
+            poem: 'poem2',
+        },
     ]
 
     return (
@@ -156,7 +166,7 @@ export default function Cards() {
                             >
                                 open image
                             </a>
-                            <a href={`/${card.poem}`}>open poem</a>
+                            <a href={`/${card.poem}`}>sent from: {card.poem}</a>
                         </StyledDesc>    
                     </StyledCardContainer>
                 ))}

@@ -70,6 +70,14 @@ export default function PoemTwo() {
             img: './cards/card5.png',
             alt: 'card5',
         },
+        {
+            img: './cards/card11.png',
+            alt: 'card11',
+        },
+        {
+            img: './cards/card12.png',
+            alt: 'card12',
+        },
     ]
 
     return (
@@ -194,7 +202,7 @@ export default function PoemTwo() {
             <br />
             <hr />
 
-            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <StyledSubtitle>Cards Collection for KOREATOWN</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (
                     <StyledCard key={card.alt}>
