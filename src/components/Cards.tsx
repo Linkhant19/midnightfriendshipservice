@@ -73,6 +73,14 @@ const StyledDesc = Styled.div`
     flex-direction: column;
     color: #08415C;
     margin-bottom: 25px;
+
+    font-size: .85em;
+`;
+
+const StyledSpan = Styled.span`
+    font-size: .7em;
+    font-style: italic;
+    color: #777777;
 `;
 
 export default function Cards() {
@@ -81,68 +89,87 @@ export default function Cards() {
         {
             img: './cards/card0.png',
             alt: 'card1',
-            poem: 'Distant Minds',
+            poem: 'poem1',
+            poem_name: 'Distant Minds',
         },
         {
             img: './cards/card1.png',
             alt: 'card1',
             poem: 'poem9',
+            poem_name: 'Coming Soon',
         },
         {
             img: './cards/card2.png',
             alt: 'card2',
             poem: 'poem4',
+            poem_name: 'Coming Soon',
         },
         {
             img: './cards/card3.png',
             alt: 'card3',
             poem: 'poem4',
+            poem_name: 'Coming Soon',
         },
         {
             img: './cards/card4.png',
             alt: 'card4',
             poem: 'poem9',
+            poem_name: 'Coming Soon',
         },
         {
             img: './cards/card5.png',
             alt: 'card5',
-            poem: 'Koreatown',
+            poem: 'poem2',
+            poem_name: 'Koreatown',
         },
         {
             img: './cards/card6.png',
             alt: 'card6',
-            poem: 'The Midnight Friendship Service',
+            poem: 'poem3',
+            poem_name: 'The Midnight Friendship Service',
         },
         {
             img: './cards/card7.png',
             alt: 'card7',
             poem: 'poem3',
+            poem_name: 'The Midnight Friendship Service',
         },
         {
             img: './cards/card8.png',
             alt: 'card8',
             poem: 'poem3',
+            poem_name: 'The Midnight Friendship Service',
         },
         {
             img: './cards/card9.png',
             alt: 'card9',
             poem: 'poem3',
+            poem_name: 'The Midnight Friendship Service',
         },
         {
             img: './cards/card10.png',
             alt: 'card10',
             poem: 'poem1',
+            poem_name: 'Distant Minds',
         },
         {
             img: './cards/card11.png',
             alt: 'card11',
             poem: 'poem2',
+            poem_name: 'Koreatown',
         },
         {
             img: './cards/card12.png',
             alt: 'card12',
             poem: 'poem2',
+            poem_name: 'Koreatown',
         },
+        {
+            img: './cards/card13.png',
+            alt: 'card13',
+            poem: 'poem1',
+            poem_name: 'Distant Minds',
+        }
     ]
 
     return (
@@ -158,15 +185,15 @@ export default function Cards() {
                         </StyledCard>
 
                         <StyledDesc>
-                            <a
+                            {/* <a
                                 href={card.img} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 style={{ color: '#08415C' }}
                             >
                                 open image
-                            </a>
-                            <a href={`/${card.poem}`}>sent from: {card.poem}</a>
+                            </a> */}
+                            <a href={`/${card.poem}`}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</a>
                         </StyledDesc>    
                     </StyledCardContainer>
                 ))}

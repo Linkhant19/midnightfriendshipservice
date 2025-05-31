@@ -81,7 +81,11 @@ export default function PoemOne() {
         {
             img: './cards/card10.png',
             alt: 'card10',
-        }
+        },
+        {
+            img: './cards/card13.png',
+            alt: 'card11',
+        },
     ]
 
     return (
