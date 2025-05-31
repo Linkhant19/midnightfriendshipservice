@@ -5,8 +5,7 @@ import Styled from 'styled-components';
 const StyledTitle = Styled.h1`
     text-align: left;
     color: #08415C;
-    margin: 50px 45px;
-    margin-bottom: 20px;
+    margin: 30px 45px 15px 45px;
     font-size: 3em;
 `;
 

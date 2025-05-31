@@ -17,8 +17,15 @@ const StyledDiv = Styled.div`
 const StyledTitle = Styled.h1`
     text-align: right;
     color: #08415C;
-    margin: 30px 10px;
+    margin: 30px 0px;
     font-size: 3.2em;
+`;
+
+const StyledSubtitle = Styled.h2`
+    text-align: left;
+    color: #08415C;
+    margin: 30px 10px;
+    font-size: 1.2em;
 `;
 
 const StyledStanza = Styled.p`
@@ -35,124 +42,167 @@ const StyledChorus = Styled.p`
     font-size: .8em;
 `;
 
+const CardCollection = Styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const StyledCard = Styled.div`
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+`;
+
+const StyledImg = Styled.img`
+    width: 100%;
+    display: block;
+`;
+
 export default function PoemTwo() {
-  return (
-    <StyledDiv>
-        <StyledTitle> Koreatown </StyledTitle>
+    const cards = [
+        {
+            img: './cards/card5.png',
+            alt: 'card5',
+        },
+    ]
 
-        <StyledStanza>
-            He said, “We discovered a new biome!” <br />
-            as you landed in New York City. <br />
-            No point in longing for home <br />
-            when you've already got restless company. <br />
-        </StyledStanza>
+    return (
+        <StyledDiv>
+            <StyledTitle> Koreatown </StyledTitle>
 
-        <StyledStanza>
-            He said his head is in a cyclone <br />
-            “Even you can’t save me.” <br />
-            Photos that lingered in your phone <br />
-            began to smell like family. <br />
-        </StyledStanza>
+            <StyledStanza>
+                He said, “We discovered a new biome!” <br />
+                as you landed in New York City. <br />
+                No point in longing for home <br />
+                when you've already got restless company. <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            Three drunk nights in Manhattan <br />
-            forever in a scene <br />
-            He tells you, “Keep your eyes open,” <br />
-            as he leads you into a dream… <br />
-        </StyledStanza>
+            <StyledStanza>
+                He said his head is in a cyclone <br />
+                “Even you can’t save me.” <br />
+                Photos that lingered in your phone <br />
+                began to smell like family. <br />
+            </StyledStanza>
 
-        <StyledChorus>
-            Koreatown! <br />
-            Asking yourself… are you living now? <br />
-            Singing along to… some shitty pop songs. <br />
-            Lost in the night smoke… as lovers hound. <br />
-            Just you and him… and Koreatown. <br />
-            Are you living now? <br />
-        </StyledChorus>
+            <StyledStanza>
+                Three drunk nights in Manhattan <br />
+                forever in a scene <br />
+                He tells you, “Keep your eyes open,” <br />
+                as he leads you into a dream… <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            He acted like a child running through wheat fields <br />
-            and he also dreamed like one. <br />
-            He took life a bit too hard and on his knees <br />
-            and with some daring demands. <br />
-        </StyledStanza>
+            <StyledChorus>
+                Koreatown! <br />
+                Asking yourself… are you living now? <br />
+                Singing along to… some shitty pop songs. <br />
+                Lost in the night smoke… as lovers hound. <br />
+                Just you and him… and Koreatown. <br />
+                Are you living now? <br />
+            </StyledChorus>
 
-        <StyledStanza>
-            He pointed out the balcony smoke. <br />
-            He communicated in poems. <br />
-            You learned to love the glimmer of hope <br />
-            as you followed his plans. <br />
-        </StyledStanza>
+            <StyledStanza>
+                He acted like a child running through wheat fields <br />
+                and he also dreamed like one. <br />
+                He took life a bit too hard and on his knees <br />
+                and with some daring demands. <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            Three tired nights in Manhattan <br />
-            forever in a scene <br />
-            He tells you, “Keep your eyes open,” <br />
-            as he leads you into a dream… <br />
-        </StyledStanza>
+            <StyledStanza>
+                He pointed out the balcony smoke. <br />
+                He communicated in poems. <br />
+                You learned to love the glimmer of hope <br />
+                as you followed his plans. <br />
+            </StyledStanza>
 
-        <StyledChorus>
-            Koreatown! <br />
-            Asking yourself… are you living now? <br />
-            Singing along to… some shitty pop songs. <br />
-            Lost in the night smoke… as lovers hound. <br />
-            Just you and him… and Koreatown. <br />
-            Are you living now? <br />
-        </StyledChorus>
+            <StyledStanza>
+                Three tired nights in Manhattan <br />
+                forever in a scene <br />
+                He tells you, “Keep your eyes open,” <br />
+                as he leads you into a dream… <br />
+            </StyledStanza>
 
-        <StyledChorus>
-            Midnight dreams! <br />
-            Telling yourself… you are seventeen. <br />
-            Painting this life… a comic scene. <br />
-            Getting caught up in… the ‘you and me’. <br />
-            He smiles at you… in your midnight dreams. <br />
-            And suddenly, You are seventeen. <br />
-        </StyledChorus>
+            <StyledChorus>
+                Koreatown! <br />
+                Asking yourself… are you living now? <br />
+                Singing along to… some shitty pop songs. <br />
+                Lost in the night smoke… as lovers hound. <br />
+                Just you and him… and Koreatown. <br />
+                Are you living now? <br />
+            </StyledChorus>
 
-        <StyledStanza>
-            Oh oh oh… <br />
-        </StyledStanza>
+            <StyledChorus>
+                Midnight dreams! <br />
+                Telling yourself… you are seventeen. <br />
+                Painting this life… a comic scene. <br />
+                Getting caught up in… the ‘you and me’. <br />
+                He smiles at you… in your midnight dreams. <br />
+                And suddenly, You are seventeen. <br />
+            </StyledChorus>
 
-        <StyledStanza>
-            Oh oh oh… <br />
-        </StyledStanza>
+            <StyledStanza>
+                Oh oh oh… <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            This was the time <br />
-            you felt like a child <br />
-            you got addicted to <br />
-            watching him smile <br />
-            he dragged you through crowds <br />
-            you walked the miles <br />
-            the moment you felt it <br />
-            you just knew it’s life. <br />
-        </StyledStanza>
+            <StyledStanza>
+                Oh oh oh… <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            Oh how he wanted to <br />
-            run on those roofs <br />
-            you said maybe next time <br />
-            and blamed it on the shoes <br />
-            the moon is watching <br />
-            taming your blues <br />
-            he has some midnight demons <br />
-            but wouldn’t dare burden you. <br />
-        </StyledStanza>
+            <StyledStanza>
+                This was the time <br />
+                you felt like a child <br />
+                you got addicted to <br />
+                watching him smile <br />
+                he dragged you through crowds <br />
+                you walked the miles <br />
+                the moment you felt it <br />
+                you just knew it’s life. <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            This is the time <br />
-            oh you feel like a child <br />
-            maybe next time <br />
-            you will finally bring <br />
-            your bestest shoes. <br />
-        </StyledStanza>
+            <StyledStanza>
+                Oh how he wanted to <br />
+                run on those roofs <br />
+                you said maybe next time <br />
+                and blamed it on the shoes <br />
+                the moon is watching <br />
+                taming your blues <br />
+                he has some midnight demons <br />
+                but wouldn’t dare burden you. <br />
+            </StyledStanza>
 
-        <StyledStanza>
-            In your brightest blues, <br />
-            he knew you. <br />
-        </StyledStanza>
+            <StyledStanza>
+                This is the time <br />
+                oh you feel like a child <br />
+                maybe next time <br />
+                you will finally bring <br />
+                your bestest shoes. <br />
+            </StyledStanza>
 
-        <Credits />
-    </StyledDiv>
+            <StyledStanza>
+                In your brightest blues, <br />
+                he knew you. <br />
+            </StyledStanza>
+
+            <Credits />
+
+            <br />
+            <br />
+            <hr />
+
+            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <CardCollection>
+                {cards.map((card) => (
+                    <StyledCard key={card.alt}>
+                        <StyledImg src={card.img} alt={card.alt} />
+                    </StyledCard>
+                ))}
+            </CardCollection>
+
+        </StyledDiv>
   );
 }

@@ -26,6 +26,10 @@ const StyledUl = Styled.ul`
 `;
 
 const StyledLi = Styled.li`
+    text-align: left;
+`;
+
+const StyledLiMid = Styled.li`
     padding: 0 20px;
     text-align: left;
 `;
@@ -39,9 +43,9 @@ export default function Nav() {
                 </StyledLi>
 
                 <StyledDiv>
-                    <StyledLi>
+                    <StyledLiMid>
                         <Link to='/contents'>Poems</Link>
-                    </StyledLi>
+                    </StyledLiMid>
                     <StyledLi>
                         <Link to='/cards'>Cards</Link>
                     </StyledLi>

@@ -17,8 +17,15 @@ const StyledDiv = Styled.div`
 const StyledTitle = Styled.h1`
     text-align: right;
     color: #08415C;
-    margin: 30px 10px;
+    margin: 30px 0px;
     font-size: 3.2em;
+`;
+
+const StyledSubtitle = Styled.h2`
+    text-align: left;
+    color: #08415C;
+    margin: 30px 10px;
+    font-size: 1.2em;
 `;
 
 const StyledStanza = Styled.p`
@@ -35,7 +42,48 @@ const StyledChorus = Styled.p`
     font-size: .8em;
 `;
 
+const CardCollection = Styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const StyledCard = Styled.div`
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+`;
+
+const StyledImg = Styled.img`
+    width: 100%;
+    display: block;
+`;
+
 export default function PoemThree() {
+    const cards = [
+        {
+            img: './cards/card6.png',
+            alt: 'card6',
+        },
+        {
+            img: './cards/card7.png',
+            alt: 'card7',
+        },
+        {
+            img: './cards/card8.png',
+            alt: 'card8',
+        },
+        {
+            img: './cards/card9.png',
+            alt: 'card9',
+        }
+    ]
+
     return (
         <StyledDiv>
             <StyledTitle> The Midnight Friendship Service </StyledTitle>
@@ -183,6 +231,20 @@ export default function PoemThree() {
             </StyledChorus>
 
             <Credits />
+
+            <br />
+            <br />
+            <hr />
+
+            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <CardCollection>
+                {cards.map((card) => (
+                    <StyledCard key={card.alt}>
+                        <StyledImg src={card.img} alt={card.alt} />
+                    </StyledCard>
+                ))}
+            </CardCollection>
+
         </StyledDiv>
     );
 }

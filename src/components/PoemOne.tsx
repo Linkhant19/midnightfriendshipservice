@@ -17,7 +17,7 @@ const StyledDiv = Styled.div`
 const StyledTitle = Styled.h1`
     text-align: right;
     color: #08415C;
-    margin: 30px 10px;
+    margin: 30px 0px 30px 15px;
     font-size: 3.2em;
 `;
 
@@ -76,25 +76,14 @@ export default function PoemOne() {
     const cards = [
         {
             img: './cards/card0.png',
-            alt: 'card1',
-            poem: 'poem1',
+            alt: 'card0',
         },
         {
-            img: './cards/card1.png',
-            alt: 'card1',
-            poem: 'poem1',
-        },
-        {
-            img: './cards/card2.png',
-            alt: 'card2',
-            poem: 'poem2',
-        },
-        {
-            img: './cards/card3.png',
-            alt: 'card3',
-            poem: 'poem3',
-        },
+            img: './cards/card10.png',
+            alt: 'card10',
+        }
     ]
+
     return (
         <StyledDiv>
             <StyledTitle>Distant Minds</StyledTitle>
@@ -232,7 +221,6 @@ export default function PoemOne() {
 
             <br />
             <br />
-
             <hr />
 
             <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
@@ -243,8 +231,7 @@ export default function PoemOne() {
                     </StyledCard>
                 ))}
             </CardCollection>
-
-            
+ 
         </StyledDiv>
     );
 }
