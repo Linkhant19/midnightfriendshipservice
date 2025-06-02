@@ -1,6 +1,7 @@
 // src/components/Cards.tsx
 
 import Styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledTitle = Styled.h1`
     text-align: left;
@@ -193,7 +194,7 @@ export default function Cards() {
                             >
                                 open image
                             </a> */}
-                            <a href={`/${card.poem}`}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</a>
+                            <Link to={`/${card.poem}`}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</Link>
                         </StyledDesc>    
                     </StyledCardContainer>
                 ))}
