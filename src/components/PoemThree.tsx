@@ -2,6 +2,7 @@
 
 import Styled from 'styled-components';
 import Credits from './Credits';
+import { Link } from 'react-router-dom';
 
 const StyledDiv = Styled.div`
     display: flex;
@@ -62,6 +63,13 @@ const StyledCard = Styled.div`
 const StyledImg = Styled.img`
     width: 100%;
     display: block;
+`;
+
+const StyledFootNav = Styled.div`
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export default function PoemThree() {
@@ -244,6 +252,15 @@ export default function PoemThree() {
                     </StyledCard>
                 ))}
             </CardCollection>
+
+            <br />
+            <br />
+            <hr />
+
+            <StyledFootNav>
+                <Link to="/poem4">&rarr; 4. Title Coming Soon</Link>
+                <Link to="/contents">&rarr; All Contents</Link>
+            </StyledFootNav>
 
         </StyledDiv>
     );

@@ -2,6 +2,7 @@
 
 import Styled from 'styled-components';
 import Credits from './Credits';
+import { Link } from 'react-router-dom';
 
 const StyledDiv = Styled.div`
     display: flex;
@@ -70,6 +71,13 @@ const StyledCard = Styled.div`
 const StyledImg = Styled.img`
     width: 100%;
     display: block;
+`;
+
+const StyledFootNav = Styled.div`
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export default function PoemOne() {
@@ -235,6 +243,15 @@ export default function PoemOne() {
                     </StyledCard>
                 ))}
             </CardCollection>
+
+            <br />
+            <br />
+            <hr />
+
+            <StyledFootNav>
+                <Link to="/poem2">&rarr; 2. Koreatown</Link>
+                <Link to="/contents">&rarr; All Contents</Link>
+            </StyledFootNav>
  
         </StyledDiv>
     );

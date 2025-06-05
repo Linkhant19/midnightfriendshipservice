@@ -5,6 +5,7 @@ import Styled from 'styled-components';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import { createGlobalStyle } from 'styled-components';
 import Nav from './components/Nav';
+import ScrollToTop from './components/ScrollToTop';
 
 const StyledDiv = Styled.div`
   display: flex;
@@ -16,6 +17,7 @@ const StyledDiv = Styled.div`
 function Root() {
   return (
     <StyledDiv>
+      <ScrollToTop />
       <Nav />
       <Main />
     </StyledDiv>
