@@ -8,6 +8,7 @@ import PoemOne from './PoemOne';
 import PoemTwo from './PoemTwo';
 import Contents from './Contents';
 import PoemThree from './PoemThree';
+import PoemFour from './PoemFour';
 
 export default function Main() {
     return (
@@ -19,6 +20,7 @@ export default function Main() {
                 <Route path='/poem1' element={<PoemOne />} />
                 <Route path='/poem2' element={<PoemTwo />} />
                 <Route path='/poem3' element={<PoemThree />} />
+                <Route path='/poem4' element={<PoemFour />} />
             </Routes>
         </>
     );

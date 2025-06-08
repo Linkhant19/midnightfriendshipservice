@@ -249,8 +249,8 @@ export default function PoemOne() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem2">&rarr; 2. Koreatown</Link>
-                <Link to="/contents">&rarr; All Contents</Link>
+                <Link to="/poem2" style={{textAlign: 'left'}}>&rarr; 2. Koreatown</Link>
+                <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
  
         </StyledDiv>

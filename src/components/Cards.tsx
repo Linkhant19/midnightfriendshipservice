@@ -96,14 +96,14 @@ export default function Cards() {
         {
             img: './cards/card1.png',
             alt: 'card1',
-            poem: 'poem9',
-            poem_name: 'Coming Soon',
+            poem: 'poem4',
+            poem_name: 'The Laundromat',
         },
         {
             img: './cards/card2.png',
             alt: 'card2',
             poem: 'poem4',
-            poem_name: 'Coming Soon',
+            poem_name: 'The Laundromat',
         },
         {
             img: './cards/card3.png',
@@ -170,6 +170,30 @@ export default function Cards() {
             alt: 'card13',
             poem: 'poem1',
             poem_name: 'Distant Minds',
+        },
+        {
+            img: './cards/card14.png',
+            alt: 'card14',
+            poem: 'poem6',
+            poem_name: 'Eric',
+        },
+        {
+            img: './cards/card15.png',
+            alt: 'card15',
+            poem: 'poem3',
+            poem_name: 'The Midnight Friendship Service',
+        },
+        {
+            img: './cards/card16.png',
+            alt: 'card16',
+            poem: 'poem5',
+            poem_name: 'The Pilot',
+        },
+        {
+            img: './cards/card17.png',
+            alt: 'card17',
+            poem: 'poem4',
+            poem_name: 'The Laundromat',
         }
     ]
 

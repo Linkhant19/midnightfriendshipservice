@@ -258,8 +258,8 @@ export default function PoemThree() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem4">&rarr; 4. Title Coming Soon</Link>
-                <Link to="/contents">&rarr; All Contents</Link>
+                <Link to="/poem4" style={{textAlign: 'left'}}>&rarr; 4. The Laundromat</Link>
+                <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
 
         </StyledDiv>

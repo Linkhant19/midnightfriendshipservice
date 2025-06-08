@@ -224,8 +224,8 @@ export default function PoemTwo() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem3">&rarr; 3. The Midnight Friendship Service</Link>
-                <Link to="/contents">&rarr; All Contents</Link>
+                <Link to="/poem3" style={{textAlign: 'left'}}>&rarr; 3. The Midnight Friendship Service</Link>
+                <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
 
         </StyledDiv>
