@@ -194,6 +194,12 @@ export default function Cards() {
             alt: 'card17',
             poem: 'poem4',
             poem_name: 'The Laundromat',
+        },
+        {
+            img: './cards/card18.png',
+            alt: 'card18',
+            poem: 'poem4',
+            poem_name: 'The Laundromat',
         }
     ]
 
