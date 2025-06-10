@@ -1,7 +1,6 @@
 // src/components/Bts.tsx
 
 import Styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const StyledTitle = Styled.h1`
     text-align: center;
@@ -53,9 +52,11 @@ export default function Bts() {
                 <br />
                 are we going back home? <br />
                 finally reaching destination? <br />
+                and when we meet again, <br />
+                would the world have turned us into distant minds? <br />
+                <br />
                 scared of being left alone with just <br />
                 me and my dreams, <br />
-                through a tactical initiation, <br />
                 I ignited a conversation, <br />
                 an invitation <br />
                 for a midnight friendship service. <br />
