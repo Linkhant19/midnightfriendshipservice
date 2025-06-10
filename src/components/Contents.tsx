@@ -13,7 +13,7 @@ const StyledTitle = Styled.h1`
 const StyledSubtitle = Styled.h2`
     text-align: left;
     color: #08415C;
-    margin: 30px 10px;
+    margin: 30px 10px 20px 10px;
     font-size: 1.2em;
     font-weight: normal;
 `;
@@ -31,6 +31,7 @@ const StyledDiv = Styled.div`
 
 const StyledLi = Styled.li`
     padding: 0 20px;
+    margin-bottom: 10px;
     text-align: left;
     text-decoration: none;
 `;
@@ -39,6 +40,16 @@ const StyledSpan = Styled.span`
     font-size: .7em;
     font-style: italic;
     color: #777777;
+`;
+
+const StyledSubtext = Styled.p`
+    text-align: left;
+    color: #08415C;
+    opacity: .8;
+    margin: 0px 10px 30px 10px;
+    font-size: .7em;
+    font-weight: normal;
+    font-style: italic;
 `;
 
 export default function Contents() {
@@ -64,24 +75,18 @@ export default function Contents() {
                 <Link to='/poem4'>4. The Laundromat</Link>
             </StyledLi>
 
-            <StyledSubtitle><StyledSpan>from: </StyledSpan>LIN - extras and behind the scenes</StyledSubtitle>
+            <StyledSubtitle><StyledSpan>from: </StyledSpan>Behind the scenes</StyledSubtitle>
             <StyledLi>
-                <Link to='/poem1'>* Letter From The Author</Link>
-            </StyledLi>
-
-            <StyledLi>
-                <Link to='/poem2'>* Behind The Scenes: Cards Collection</Link>
-            </StyledLi>
-
-            <StyledLi>
-                <Link to='/poem3'>* Distant Minds - Original Pages</Link>
-            </StyledLi>
-
-            <StyledLi>
-                <Link to='/poem3'>* The Midnight Friendship Service - Original Pages</Link>
+                <Link to='/bts'>* epilogue, extras, and original pages</Link>
             </StyledLi>
 
             <StyledSubtitle><StyledSpan>from: </StyledSpan>MORE (THAN) FRIENDSHIP SERVICE collection</StyledSubtitle>
+
+            <StyledSubtext>
+                These are the poems that did not make the cut for the main collection because they didn't fit the theme or I just wasn't too happy with them.
+                However, since they were written around the same time, I still wanted to share them with you. I hope you like them!
+            </StyledSubtext>
+
             <StyledLi>
                 <Link to='/poem1'>1. The Pilot</Link>
             </StyledLi>
