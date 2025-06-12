@@ -266,7 +266,7 @@ export default function PoemTwo() {
                 <br />
                 So, I find myself across the room <br />
                 in a warm light, next to you. <br />
-                I grabbed a pen and wrote down <br />
+                I opened my notes app and wrote down <br />
                 all the scenes, and this song. <br />
             </StyledChorus>
 

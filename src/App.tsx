@@ -15,6 +15,7 @@ const StyledDiv = Styled.div`
 `;
 
 function Root() {
+
   return (
     <StyledDiv>
       <ScrollToTop />

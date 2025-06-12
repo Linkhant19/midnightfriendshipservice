@@ -1,7 +1,7 @@
 // src/components/Nav.tsx
 
 import Styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const StyledNav = Styled.nav`
     width: 100%;
@@ -35,12 +35,15 @@ const StyledLiMid = Styled.li`
 `;
 
 export default function Nav() {
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+
     return (
         <StyledNav>
             <StyledUl>
-                <StyledLi>
+                {!isHome && <StyledLi>
                     <Link to='/'>THE MIDNIGHT FRIENDSHIP SERVICE</Link>
-                </StyledLi>
+                </StyledLi>}
 
                 <StyledDiv>
                     <StyledLiMid>
