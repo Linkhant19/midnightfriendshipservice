@@ -14,9 +14,9 @@ const StyledDiv = Styled.div`
 const FlipContainer = Styled.div<{ $flipped: boolean }>`
   width: 30%;
   height: auto;
-  transition: transform 1s;
+  transition: transform .3s;
   transform-style: preserve-3d;
-  transform: ${(props) => (props.$flipped ? "translateY(-2%)" : "translateY(0%), rotateY(0deg), translateX(0%)")};
+  transform: ${(props) => (props.$flipped ? "translateY(-1%)" : "translateY(0%), rotateY(0deg), translateX(0%)")};
 
   @media (max-width: 600px) {
     width: 100%;
@@ -51,9 +51,9 @@ export default function Home() {
     setTimeout(() => {
       setIndex((prev) => (prev + 1) % images.length); 
       setFlipped(false);
-    }, 300);
+    }, 100);
   };
-  
+
   return (
     <StyledDiv>
       <FlipContainer $flipped={flipped}>

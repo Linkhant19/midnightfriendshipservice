@@ -81,7 +81,13 @@ const StyledFootNav = Styled.div`
     justify-content: space-between;
 `;
 
-export default function PoemTwo() {
+const StyledSpan = Styled.span`
+    font-size: .7em;
+    font-style: italic;
+    color: #777777;
+`;
+
+export default function PoemFour() {
     const cards = [
         {
             img: './cards/card1.png',
@@ -114,7 +120,7 @@ export default function PoemTwo() {
             </StyledStanza>
 
             <StyledStanza>
-                Sitting circled in the mess <br />
+                Sitting in circle and the mess <br />
                 My tongue crawled inside my head <br />
                 It’s too late to stop sharing now <br />
                 So, just don’t slip a tear. <br />
@@ -276,7 +282,7 @@ export default function PoemTwo() {
             <br />
             <hr />
 
-            <StyledSubtitle>Cards Collection for THE LAUNDROMAT</StyledSubtitle>
+            <StyledSubtitle><StyledSpan>Cards Collection for: </StyledSpan>The Laundromat</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (
                     <StyledCard key={card.alt}>

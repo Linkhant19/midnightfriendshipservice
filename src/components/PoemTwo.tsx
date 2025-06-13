@@ -72,6 +72,12 @@ const StyledFootNav = Styled.div`
     justify-content: space-between;
 `;
 
+const StyledSpan = Styled.span`
+    font-size: .7em;
+    font-style: italic;
+    color: #777777;
+`;
+
 export default function PoemTwo() {
     const cards = [
         {
@@ -210,7 +216,7 @@ export default function PoemTwo() {
             <br />
             <hr />
 
-            <StyledSubtitle>Cards Collection for KOREATOWN</StyledSubtitle>
+            <StyledSubtitle><StyledSpan>Cards Collection for: </StyledSpan>Koreatown</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (
                     <StyledCard key={card.alt}>

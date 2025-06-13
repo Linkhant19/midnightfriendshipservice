@@ -88,7 +88,7 @@ export default function Contents() {
             </StyledSubtext>
 
             <StyledLi>
-                <Link to='/poem1'>1. The Pilot</Link>
+                <Link to='/poem5'>1. The Pilot</Link>
             </StyledLi>
 
             <StyledLi>

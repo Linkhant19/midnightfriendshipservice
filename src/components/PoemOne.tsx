@@ -80,6 +80,12 @@ const StyledFootNav = Styled.div`
     justify-content: space-between;
 `;
 
+const StyledSpan = Styled.span`
+    font-size: .7em;
+    font-style: italic;
+    color: #777777;
+`;
+
 export default function PoemOne() {
     const cards = [
         {
@@ -235,7 +241,7 @@ export default function PoemOne() {
             <br />
             <hr />
 
-            <StyledSubtitle>Cards Collection for DISTANT MINDS</StyledSubtitle>
+            <StyledSubtitle><StyledSpan>Cards Collection for: </StyledSpan>Distant Minds</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (
                     <StyledCard key={card.alt}>
