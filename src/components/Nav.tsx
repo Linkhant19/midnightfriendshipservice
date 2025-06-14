@@ -45,6 +45,10 @@ export default function Nav() {
                     <Link to='/'>THE MIDNIGHT FRIENDSHIP SERVICE</Link>
                 </StyledLi>}
 
+                {isHome && <StyledLi>
+                    <Link to='/'> </Link>
+                </StyledLi>}
+
                 <StyledDiv>
                     <StyledLiMid>
                         <Link to='/contents'>Poems</Link>

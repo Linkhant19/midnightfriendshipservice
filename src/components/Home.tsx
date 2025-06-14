@@ -41,7 +41,7 @@ const StyledText = Styled.h1`
 `;
 
 export default function Home() {
-  const images = ['./cover3.png', './cover4.png', './cover2.png', './contents1.png'];
+  const images = ['./cover3.png', './cover4.png'];
   const [index, setIndex] = useState(0);
 
   const [flipped, setFlipped] = useState(false);

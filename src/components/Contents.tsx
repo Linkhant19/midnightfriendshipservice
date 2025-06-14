@@ -92,7 +92,7 @@ export default function Contents() {
             </StyledLi>
 
             <StyledLi>
-                <Link to='/poem2'>2. Eric</Link>
+                <Link to='/poem6'>2. Swimming</Link>
             </StyledLi>
 
             <StyledLi>

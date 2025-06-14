@@ -108,13 +108,13 @@ export default function Cards() {
         {
             img: './cards/card3.png',
             alt: 'card3',
-            poem: 'poem4',
-            poem_name: 'Coming Soon',
+            poem: 'poem6',
+            poem_name: 'Swimming',
         },
         {
             img: './cards/card4.png',
             alt: 'card4',
-            poem: 'poem9',
+            poem: 'poem6',
             poem_name: 'Coming Soon',
         },
         {
@@ -200,7 +200,13 @@ export default function Cards() {
             alt: 'card18',
             poem: 'poem4',
             poem_name: 'The Laundromat',
-        }
+        },
+        {
+            img: './cards/card19.png',
+            alt: 'card19',
+            poem: 'poem6',
+            poem_name: 'Swimming',
+        },
     ]
 
     return (

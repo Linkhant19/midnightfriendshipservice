@@ -11,6 +11,7 @@ import PoemThree from './PoemThree';
 import PoemFour from './PoemFour';
 import Bts from './Bts';
 import PoemFive from './PoemFive';
+import PoemSix from './PoemSix';
 
 export default function Main() {
     return (
@@ -28,6 +29,7 @@ export default function Main() {
                 <Route path='/bts' element={<Bts />} />
 
                 <Route path='/poem5' element={<PoemFive />} />
+                <Route path='/poem6' element={<PoemSix />} />
             </Routes>
         </>
     );
