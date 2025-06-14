@@ -35,7 +35,7 @@ const StyledCard = Styled.div`
     transition: all 1s ease;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.005);
         box-shadow: 0 0 20px #08415C;
     }
 
@@ -230,7 +230,7 @@ export default function Cards() {
                             >
                                 open image
                             </a> */}
-                            <Link to={`/${card.poem}`}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</Link>
+                            <Link to={`/${card.poem}`} style={{ cursor: 'pointer' }}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</Link>
                         </StyledDesc>    
                     </StyledCardContainer>
                 ))}

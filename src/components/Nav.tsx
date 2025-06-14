@@ -34,6 +34,13 @@ const StyledLiMid = Styled.li`
     text-align: left;
 `;
 
+const StyledCredits = Styled.img`
+  width: 200px;
+  height: auto;
+  margin: 15% 0% 0% 0%;
+  align-self: center;
+`;
+
 export default function Nav() {
     const location = useLocation();
     const isHome = location.pathname === '/';
@@ -46,7 +53,7 @@ export default function Nav() {
                 </StyledLi>}
 
                 {isHome && <StyledLi>
-                    <Link to='/'> </Link>
+                    <StyledCredits src='./hw0.jpg' alt='credits' />
                 </StyledLi>}
 
                 <StyledDiv>

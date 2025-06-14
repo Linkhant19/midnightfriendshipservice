@@ -2,30 +2,25 @@
 
 import { useState } from 'react';
 import Styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledDiv = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 30px auto;
-`;
-
-const FlipContainer = Styled.div<{ $flipped: boolean }>`
   width: 30%;
-  height: auto;
-  transition: transform .3s;
-  transform-style: preserve-3d;
-  transform: ${(props) => (props.$flipped ? "translateY(-1%)" : "translateY(0%), rotateY(0deg), translateX(0%)")};
+  margin: 30px auto;
+  z-index: 1;
 
   @media (max-width: 600px) {
     width: 100%;
   }
 `;
 
-const StyledImg = Styled.img`
+const StyledImg = Styled.img<{ $fade: boolean }>`
   width: 100%;
-  backface-visibility: hidden;
+  opacity: ${(props) => (props.$fade ? 0 : 1)};
+  transition: opacity 0.5s ease-in-out;
 `;
 
 const StyledText = Styled.h1`
@@ -40,26 +35,57 @@ const StyledText = Styled.h1`
   }
 `;
 
+const StyledBackgroundImg = Styled.img`
+  position: fixed;
+  top: 75%;
+  left: 54%;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+
+  @media (max-width: 600px) {
+    top: 79%;
+  }
+`;
+
+const StyledBackgroundImg2 = Styled.img`
+  position: fixed;
+  top: 75%;
+  left: 2%;
+  width: 90px;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+
+  @media (max-width: 600px) {
+    top: 87%;
+  }
+`;
+
 export default function Home() {
   const images = ['./cover3.png', './cover4.png'];
   const [index, setIndex] = useState(0);
 
-  const [flipped, setFlipped] = useState(false);
+  const [fade, setFade] = useState(false);
 
   const handleClick = () => {
-    setFlipped(true); 
+    setFade(true); 
     setTimeout(() => {
-      setIndex((prev) => (prev + 1) % images.length); 
-      setFlipped(false);
-    }, 100);
+      setIndex((prev) => (prev + 1) % images.length);
+      setFade(false); 
+    }, 250); 
   };
 
   return (
     <StyledDiv>
-      <FlipContainer $flipped={flipped}>
-        <StyledImg src={images[index]} alt='main title' />
-      </FlipContainer>
-      <StyledText onClick={handleClick}>◉</StyledText>
+      <Link to='/contents' style={{ cursor: 'pointer' }}>
+        <StyledImg src={images[index]} alt='main title' $fade={fade} />
+      </Link>
+      <StyledText onClick={handleClick} style={{ cursor: 'pointer' }}>◉</StyledText>
+
+      <StyledBackgroundImg src='./hw1.jpg' alt='background' />
+      <StyledBackgroundImg2 src='./hw2.jpg' alt='background' />
     </StyledDiv>
   );
 }
