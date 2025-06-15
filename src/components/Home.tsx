@@ -49,20 +49,6 @@ const StyledBackgroundImg = Styled.img`
   }
 `;
 
-const StyledBackgroundImg2 = Styled.img`
-  position: fixed;
-  top: 75%;
-  left: 2%;
-  width: 90px;
-  height: auto;
-  object-fit: cover;
-  z-index: -1;
-
-  @media (max-width: 600px) {
-    top: 87%;
-  }
-`;
-
 export default function Home() {
   const images = ['./cover3.png', './cover4.png'];
   const [index, setIndex] = useState(0);
@@ -85,7 +71,6 @@ export default function Home() {
       <StyledText onClick={handleClick} style={{ cursor: 'pointer' }}>◉</StyledText>
 
       <StyledBackgroundImg src='./hw1.jpg' alt='background' />
-      <StyledBackgroundImg2 src='./hw2.jpg' alt='background' />
     </StyledDiv>
   );
 }

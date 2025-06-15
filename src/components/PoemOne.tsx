@@ -100,6 +100,10 @@ export default function PoemOne() {
             img: './cards/card13.png',
             alt: 'card11',
         },
+        {
+            img: './cards/card20.png',
+            alt: 'card20',
+        },
     ]
 
     return (

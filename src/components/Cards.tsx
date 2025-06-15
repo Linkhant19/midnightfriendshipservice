@@ -2,6 +2,7 @@
 
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Credits from './Credits';
 
 const StyledTitle = Styled.h1`
     text-align: left;
@@ -14,6 +15,7 @@ const GallaryDiv = Styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: transparent;
 `;
 
 const StyledCardContainer = Styled.div`
@@ -33,6 +35,7 @@ const StyledCard = Styled.div`
     overflow: hidden;
     position: relative;
     transition: all 1s ease;
+    background-color: transparent;
 
     &:hover {
         transform: scale(1.005);
@@ -207,10 +210,22 @@ export default function Cards() {
             poem: 'poem6',
             poem_name: 'Swimming',
         },
+        {
+            img: './cards/card20.png',
+            alt: 'card20',
+            poem: 'poem1',
+            poem_name: 'Distant Minds',
+        },
+        {
+            img: './cards/card21.png',
+            alt: 'card21',
+            poem: 'poem2',
+            poem_name: 'Koreatown',
+        }
     ]
 
     return (
-        <div>
+        <div style={{ zIndex: 1, backgroundColor: 'transparent' }}>
             <StyledTitle>Cards Collection</StyledTitle>
 
             {/* gallery of all cards in cards mapped */}
@@ -235,6 +250,8 @@ export default function Cards() {
                     </StyledCardContainer>
                 ))}
             </GallaryDiv>
+
+            <Credits />
         </div>
     );
 }

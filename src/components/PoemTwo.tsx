@@ -92,6 +92,10 @@ export default function PoemTwo() {
             img: './cards/card12.png',
             alt: 'card12',
         },
+        {
+            img: './cards/card21.png',
+            alt: 'card21',
+        },
     ]
 
     return (

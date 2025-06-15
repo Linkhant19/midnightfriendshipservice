@@ -95,6 +95,10 @@ export default function PoemThree() {
         {
             img: './cards/card9.png',
             alt: 'card9',
+        },
+        {
+            img: './cards/card15.png',
+            alt: 'card15',
         }
     ]
 
