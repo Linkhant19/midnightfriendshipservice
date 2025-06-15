@@ -84,6 +84,10 @@ export default function PoemFive() {
             img: './cards/card16.png',
             alt: 'card16',
         },
+        {
+            img: './cards/card22.png',
+            alt: 'card22',
+        },
     ]
 
     return (
@@ -192,7 +196,7 @@ export default function PoemFive() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem3" style={{textAlign: 'left'}}>&rarr; 3. The Midnight Friendship Service</Link>
+                <Link to="/poem7" style={{textAlign: 'left'}}>&rarr; (Extra) 6. Alex</Link>
                 <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
 

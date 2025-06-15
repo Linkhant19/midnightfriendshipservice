@@ -296,7 +296,7 @@ export default function PoemFour() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem3" style={{textAlign: 'left'}}>&rarr; Extra 1. The Pilot</Link>
+                <Link to="/poem5" style={{textAlign: 'left'}}>&rarr; (Extra) 5. The Pilot</Link>
                 <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
 

@@ -12,13 +12,21 @@ const StyledDiv = Styled.div`
   margin: 30px auto;
   z-index: 1;
 
+  @media (max-width: 900px) {
+    margin: 70px auto;
+    width: 62%;
+  }
+
   @media (max-width: 600px) {
+    margin: 30px auto;
     width: 100%;
   }
 `;
 
 const StyledImg = Styled.img<{ $fade: boolean }>`
   width: 100%;
+  height: auto;
+  background-color: transparent;
   opacity: ${(props) => (props.$fade ? 0 : 1)};
   transition: opacity 0.5s ease-in-out;
 `;
@@ -44,13 +52,18 @@ const StyledBackgroundImg = Styled.img`
   object-fit: cover;
   z-index: -1;
 
+  @media (max-width: 900px) {
+    left: 70%;
+  }
+
   @media (max-width: 600px) {
-    top: 79%;
+    top: 80%;
+    left: 54%;
   }
 `;
 
 export default function Home() {
-  const images = ['./cover3.png', './cover4.png'];
+  const images = ['./cover3.png', './cover4.png', './cover5.png', './cover7.png', './cover8.png'];
   const [index, setIndex] = useState(0);
 
   const [fade, setFade] = useState(false);

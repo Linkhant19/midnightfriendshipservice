@@ -11,7 +11,7 @@ const StyledDiv = Styled.div`
     margin: 0 auto;
     z-index: 1;
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
         width: 100%;
     }
 `;
@@ -149,15 +149,15 @@ export default function Contents() {
             </StyledSubtext>
 
             <StyledLi>
-                <Link to='/poem5'>1. The Pilot</Link>
+                <Link to='/poem5'>5. The Pilot</Link>
             </StyledLi>
 
             <StyledLi>
-                <Link to='/poem6'>2. Swimming</Link>
+                <Link to='/poem7'>6. Alex</Link>
             </StyledLi>
 
             <StyledLi>
-                <Link to='/poem3'>3. Title Coming Soon</Link>
+                <Link to='/poem6'>7. Swimming</Link>
             </StyledLi>
 
             <StyledBackgroundImg src='./hw2.jpg' alt='background' />

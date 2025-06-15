@@ -216,18 +216,6 @@ export default function PoemSix() {
                 live. <br />
             </StyledStanza>
 
-            <StyledStanza>
-                I just want to live without fear in my country. <br />
-                I just want to stay with my newfound family <br />
-                in this country. <br />
-                I just want to tame my fears without burdening anyone anymore. <br />
-                I just want the letter we said we would exchange for <br />
-                our <br />
-                graduation. <br />
-                <br />
-                Now, I am just swimming. <br />
-            </StyledStanza>
-
             <StyledChorus>
                 How does everything come back rushing <br />
                 when I am alone in the water? <br />
@@ -256,7 +244,7 @@ export default function PoemSix() {
             <hr />
 
             <StyledFootNav>
-                <Link to="/poem3" style={{textAlign: 'left'}}>&rarr; 3. The Midnight Friendship Service</Link>
+                <Link to="/bts" style={{textAlign: 'left'}}>&rarr; Epilogue</Link>
                 <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
             </StyledFootNav>
 

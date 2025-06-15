@@ -47,6 +47,35 @@ const StyledText = Styled.p`
     font-size: .8em;
 `;
 
+const StyledCharacterContainer = Styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+`;
+
+const StyledCharacters = Styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`;
+
+const StyledCharacterImg = Styled.img`
+    width: auto;
+    height: 200px;
+    margin: 0 3%;
+
+    @media (max-width: 600px) {
+        width: auto;
+        height: 100px;
+        margin: 0 3%;
+    }
+`;
+
 export default function Bts() {
     return (
         <>
@@ -80,7 +109,15 @@ export default function Bts() {
                     <span style={{marginLeft: '80px'}}></span>for a midnight friendship service. <br />
                 </StyledText>
             </StyledScene>
-            
+
+            <StyledCharacterContainer>
+                <StyledSubtitle>The Characters</StyledSubtitle>
+                <StyledCharacters>
+                    <StyledCharacterImg src='./hw2.jpg' alt='background' />
+                    <StyledCharacterImg src='./hw3.jpg' alt='background' />
+                    <StyledCharacterImg src='./hw4.jpg' alt='background' />
+                </StyledCharacters>
+            </StyledCharacterContainer>
 
             <StyledSubtitle>Letter from the Author</StyledSubtitle>
             <StyledSubtitleEmoji>✉︎</StyledSubtitleEmoji>

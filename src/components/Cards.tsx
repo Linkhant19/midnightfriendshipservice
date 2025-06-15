@@ -221,6 +221,12 @@ export default function Cards() {
             alt: 'card21',
             poem: 'poem2',
             poem_name: 'Koreatown',
+        },
+        {
+            img: './cards/card22.png',
+            alt: 'card22',
+            poem: 'poem5',
+            poem_name: 'The Pilot',
         }
     ]
 
