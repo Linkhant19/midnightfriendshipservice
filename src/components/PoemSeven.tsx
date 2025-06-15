@@ -81,12 +81,12 @@ const StyledSpan = Styled.span`
 export default function PoemSeven() {
     const cards = [
         {
-            img: './cards/card14.png',
-            alt: 'card14',
+            img: './cards/card23.png',
+            alt: 'card23',
         },
         {
-            img: './cards/card19.png',
-            alt: 'card19',
+            img: './cards/card14.png',
+            alt: 'card14',
         }
     ]
 

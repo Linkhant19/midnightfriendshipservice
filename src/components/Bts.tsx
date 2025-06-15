@@ -8,6 +8,7 @@ const StyledScene = Styled.div`
     width: 100%;
     margin: 0 auto;
     align-items: center;
+    background: transparent;
 `;
 
 const StyledTitle = Styled.h1`
@@ -15,6 +16,7 @@ const StyledTitle = Styled.h1`
     color: #08415C;
     margin: 30px 10px;
     font-size: 3.2em;
+    background: transparent;
 `;
 
 const StyledSubtitle = Styled.h3`
@@ -22,6 +24,7 @@ const StyledSubtitle = Styled.h3`
     color: #08415C;
     margin: 30px 10px 10px 10px;
     font-size: 1.2em;
+    background: transparent;
 `;
 
 const StyledSubtitleEmoji = Styled.h3`
@@ -71,19 +74,48 @@ const StyledCharacterImg = Styled.img`
 
     @media (max-width: 600px) {
         width: auto;
-        height: 100px;
+        height: 120px;
         margin: 0 3%;
     }
 `;
 
+const StyledCharacter = Styled.div`
+    margin: 10px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+const CharacterText = Styled.p`
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1em;
+    color: #08415C;
+    margin-top: 10px;
+    background: transparent;
+
+    @media (max-width: 600px) {
+        font-size: .7em;
+    }
+`;
+
+const StyledBackgroundImg = Styled.img`
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+`;
+
 export default function Bts() {
     return (
-        <>
+        <div style={{zIndex: 1}}>
             <StyledTitle>After Credits</StyledTitle>
 
             <StyledScene>
                 <StyledSubtitle>Epilogue: The Scene</StyledSubtitle>
-                <StyledSubtitleEmoji>🎥</StyledSubtitleEmoji>
+                <StyledBackgroundImg src='./hw5.jpg' alt='background' />
                 <StyledText>
                     It's 2 a.m. <br />
                     We're... <br />
@@ -113,9 +145,20 @@ export default function Bts() {
             <StyledCharacterContainer>
                 <StyledSubtitle>The Characters</StyledSubtitle>
                 <StyledCharacters>
-                    <StyledCharacterImg src='./hw2.jpg' alt='background' />
-                    <StyledCharacterImg src='./hw3.jpg' alt='background' />
-                    <StyledCharacterImg src='./hw4.jpg' alt='background' />
+                    <StyledCharacter>
+                        <StyledCharacterImg src='./hw2.jpg' alt='background' />
+                        <CharacterText>The Lawyers</CharacterText>
+                    </StyledCharacter>
+                    
+                    <StyledCharacter>
+                        <StyledCharacterImg src='./hw3.jpg' alt='background' />
+                        <CharacterText>The Dreamers</CharacterText>
+                    </StyledCharacter>
+
+                    <StyledCharacter>
+                        <StyledCharacterImg src='./hw4.jpg' alt='background' />
+                        <CharacterText>The Architects</CharacterText>
+                    </StyledCharacter>
                 </StyledCharacters>
             </StyledCharacterContainer>
 
@@ -127,6 +170,6 @@ export default function Bts() {
                 </StyledText>
             </StyledLetter>
             
-        </>
+        </div>
     );
 }

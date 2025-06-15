@@ -85,6 +85,10 @@ export default function PoemSix() {
             alt: 'card3',
         },
         {
+            img: './cards/card4.png',
+            alt: 'card4',
+        },
+        {
             img: './cards/card19.png',
             alt: 'card19',
         }

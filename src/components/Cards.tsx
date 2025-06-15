@@ -118,7 +118,7 @@ export default function Cards() {
             img: './cards/card4.png',
             alt: 'card4',
             poem: 'poem6',
-            poem_name: 'Coming Soon',
+            poem_name: 'Swimming',
         },
         {
             img: './cards/card5.png',
@@ -227,7 +227,13 @@ export default function Cards() {
             alt: 'card22',
             poem: 'poem5',
             poem_name: 'The Pilot',
-        }
+        }, 
+        {
+            img: './cards/card23.png',
+            alt: 'card23',
+            poem: 'poem7',
+            poem_name: 'Alex',
+        },
     ]
 
     return (
