@@ -137,6 +137,8 @@ export default function PoemOne() {
                 your pandora worries seeping into your death dreams <br />
                 slipped through your fingers but flowing right back into your life stream <br />
                 if you would just let me in <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanzaTwo>
@@ -166,6 +168,8 @@ export default function PoemOne() {
                 your Sedona friendship seeping into my night dreams <br />
                 slipped through my fingers but coming right back into my life stream <br />
                 if you would just let me in <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledChorus>
@@ -227,6 +231,8 @@ export default function PoemOne() {
 
             <StyledChorus>
                 Just let me in <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanzaTwo>

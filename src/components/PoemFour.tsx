@@ -228,7 +228,8 @@ export default function PoemFour() {
                 I would have wanted <br />
                 if I met you in another universe, <br />
                 and I was rich, better off, but haunted <br />
-                by all that could have been, the little things, <br />
+                by all that could have been, <br />
+                the little things, <br />
                 and a million what-ifs? <br />
                 <br />
                 In that universe, I would have said, conflicted, <br />
@@ -272,7 +273,7 @@ export default function PoemFour() {
                 <br />
                 So, I find myself across the room <br />
                 in a warm light, next to you. <br />
-                I opened my notes app and wrote down <br />
+                I opened my Notes app and wrote down <br />
                 all the scenes, and this song. <br />
             </StyledChorus>
 

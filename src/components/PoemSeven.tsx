@@ -97,6 +97,8 @@ export default function PoemSeven() {
             <StyledChorus>
                 I just want to get to know you, <br />
                 I just want to get to know you a little bit better. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -127,6 +129,8 @@ export default function PoemSeven() {
                 You occupy my mind and what-ifs <br />
                 What are you doing here, Alex? <br />
                 I wish I just knew you a little bit better. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -155,6 +159,8 @@ export default function PoemSeven() {
                 <br />
                 I just want to get to know you, <br />
                 I just want to get to know you a little bit better. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>

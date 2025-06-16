@@ -109,6 +109,8 @@ export default function PoemSix() {
                 How does everything come back rushing in <br />
                 when I am alone in the water? <br />
                 I could sink… but, right now, I am just swimming. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -124,6 +126,8 @@ export default function PoemSix() {
                 When did all my dreamings of just existing <br />
                 become obsolete? <br />
                 I could cry… but, right now, I am just swimming. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -165,6 +169,8 @@ export default function PoemSix() {
                 How did I push a good friend into saying <br />
                 he was losing love for me? <br />
                 I could die… but, right now, I am just swimming. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -173,6 +179,8 @@ export default function PoemSix() {
                 want… <br />
                 to… <br />
                 live. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledStanza>
 
             <StyledStanza>
@@ -181,6 +189,8 @@ export default function PoemSix() {
                 want… <br />
                 to… <br />
                 live. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledStanza>
 
             <StyledStanza>
@@ -210,6 +220,8 @@ export default function PoemSix() {
                 want… <br />
                 to… <br />
                 live. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledStanza>
 
             <StyledStanza>
@@ -218,6 +230,8 @@ export default function PoemSix() {
                 want… <br />
                 to… <br />
                 live. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledStanza>
 
             <StyledChorus>
@@ -226,6 +240,8 @@ export default function PoemSix() {
                 I could die… but, right now, <br />
                 this moment now, <br />
                 I am just swimming. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <Credits />

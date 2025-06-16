@@ -107,6 +107,8 @@ export default function PoemThree() {
             <StyledTitle>The Midnight Friendship Service</StyledTitle>
 
             <StyledStanza>
+                ♫♪♫♪♫ <br />
+                <br />
                 Moonlight <br />
                 dripped on your hood <br />
                 I remember my smile that brightened your look <br />
@@ -159,11 +161,15 @@ export default function PoemThree() {
                 The truth is <br />
                 I have never met someone like you <br />
                 I have never met someone like you <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledChorus>
                 With you, I dance where hope is, <br />
                 pretending that tomorrow is promised. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledChorus>
@@ -241,11 +247,15 @@ export default function PoemThree() {
             <StyledChorus>
                 Come dressed in the sunset, taunting the blues <br />
                 I have never met someone like you <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledChorus>
                 With you, I dance where hope is, <br />
                 pretending that tomorrow is promised. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <Credits />

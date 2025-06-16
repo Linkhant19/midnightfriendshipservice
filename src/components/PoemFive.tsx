@@ -118,6 +118,8 @@ export default function PoemFive() {
                 taking this dream of us… <br />
                 on a flight test <br />
                 lever in my hand, I am coming in demand. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -144,6 +146,8 @@ export default function PoemFive() {
                 taking this dream of us… <br />
                 oh on a flight test <br />
                 lever in my hand, I am coming in demand. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
@@ -168,6 +172,8 @@ export default function PoemFive() {
                 lever in my hand, I am coming...<br />
                 Oh, I am coming... <br />
                 I am coming in demand. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>

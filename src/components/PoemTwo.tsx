@@ -169,10 +169,14 @@ export default function PoemTwo() {
                 Getting caught up in… the ‘you and me’. <br />
                 He smiles at you… in your midnight dreams. <br />
                 And suddenly, You are seventeen. <br />
+                <br />
+                ♫♪♫♪♫
             </StyledChorus>
 
             <StyledStanza>
                 Oh oh oh… <br />
+                <br />
+                ♫♪♫♪♫
             </StyledStanza>
 
             <StyledStanza>
