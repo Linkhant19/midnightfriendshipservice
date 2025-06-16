@@ -39,7 +39,10 @@ const StyledLetter = Styled.div`
     flex-direction: column;
     width: 70%;
     margin: 40px auto;
-    border: 1px solid #08415C;
+    border: 3px solid #08415C;
+    border-style: none none none solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
     @media (max-width: 600px) {
         width: 100%;
@@ -105,11 +108,19 @@ const CharacterText = Styled.p`
     }
 `;
 
+const StyledDiv = Styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px auto 15px auto;
+    align-items: center;
+`;
+
 const StyledBackgroundImg = Styled.img`
     width: 60px;
     height: auto;
+    margin: 0 20px;
     object-fit: cover;
-    z-index: -1;
 `;
 
 export default function Bts() {
@@ -165,25 +176,30 @@ export default function Bts() {
                     </StyledCharacter>
                 </StyledCharacters>
             </StyledCharacterContainer>
-
             
             <StyledLetter>
                 <StyledSubtitle style={{marginTop: '20px'}}>Letter from the Author</StyledSubtitle>
-                <StyledSubtitleEmoji>✉︎</StyledSubtitleEmoji>
+                <StyledDiv>
+                    <StyledBackgroundImg src='./hw6.jpg' alt='background' />
+                </StyledDiv>
                 <StyledText style={{lineHeight: '2em', margin: '0px 5px'}}>
-                    I wrote this collection on the road. I had a vision of myself being dragged away from the grand ballroom as the ticking clock marched toward twelve, a few moments before everything turned back to dirt. But, my words weren’t magic; they were real enough to stand across midnights. So, right before all my coachmen transformed into rats, right before I have to leave everything behind, right before my graduation, I wrote down a few melodies. <br />
+                    I wrote this collection on the road. I had a vision of myself being dragged away from the grand ballroom as the ticking clock marched toward twelve, a few moments before everything turned back to dirt. But, my words weren’t magic; they were just real enough to stand across midnights. So, right before all my coachmen transformed into rats, right before I have to leave everything behind, right before my graduation, I wrote down a few melodies. <br />
                     <br />
                     I had some visions: <br />
-                    Distant Minds: Two friends meeting again in the dead of night as their friendship heads to where the dead things go, <br />
-                    Koreatown: The story of a chaotic friend viewed from the third person lens, <br />
-                    The Midnight Friendship Service: An unexpected, vampiric friendship service, <br />
-                    The Laundromat: Dreamings of what a friendship could have been if life was kinder. <br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>Distant Minds: </span><br />
+                    Two friends meeting again in the dead of night as their friendship heads to where the dead things go, <br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>Koreatown: </span><br />
+                    Chosen chaos, a new city, and, running on rooftops, <br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>The Midnight Friendship Service: </span><br />
+                    An unexpected, vampiric friendship service, <br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>The Laundromat: </span><br />
+                    Dreamings of what a friendship could have been if life was kinder. <br />
                     <br />
                     This collection of poems is about the closest friendships, some more tender, some more tragic. It is for those who find themselves coping more than healing. These explored perspectives came from a boy trying to express something no one taught him how to say. So, I hope you will be kind. I hope you give them a chance. I hope the words take you back to your own days before midnight. Even someday, when all has turned to dirt, I hope you save them a space in your careful minds. <br />
                     <br />
                     I have no doubt they will stay, because they are more than some fairy magic. We’ve all bled through the chapters of our own midnight friendship service. <br />
                 </StyledText>
-                <StyledText>-Lin</StyledText>
+                <StyledBackgroundImg src='./hw7.jpg' alt='background' style={{margin: '20px', width: '100px'}}/>
             </StyledLetter>
 
             <StyledText>
