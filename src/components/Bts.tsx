@@ -27,13 +27,6 @@ const StyledSubtitle = Styled.h3`
     background: transparent;
 `;
 
-const StyledSubtitleEmoji = Styled.h3`
-    text-align: center;
-    color: #08415C;
-    margin: 0px 10px 10px 10px;
-    font-size: 1.2em;
-`;
-
 const StyledLetter = Styled.div`
     display: flex;
     flex-direction: column;
