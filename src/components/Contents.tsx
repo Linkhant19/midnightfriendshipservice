@@ -138,7 +138,11 @@ export default function Contents() {
 
             <StyledSubtitle><StyledSpan>from: </StyledSpan>Behind the scenes</StyledSubtitle>
             <StyledLi>
-                <Link to='/bts'>* epilogue, extras, and original pages</Link>
+                <Link to='/bts'>* epilogue, characters, and letter</Link>
+            </StyledLi>
+
+            <StyledLi>
+                <Link to='/original'>* original pages</Link>
             </StyledLi>
 
             <StyledSubtitle><StyledSpan>from: </StyledSpan>MORE <StyledSpan>(than)</StyledSpan> FRIENDSHIP SERVICE collection</StyledSubtitle>

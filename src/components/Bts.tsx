@@ -1,6 +1,7 @@
 // src/components/Bts.tsx
 
 import Styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledScene = Styled.div`
     display: flex;
@@ -36,6 +37,10 @@ const StyledLetter = Styled.div`
     border-style: none none none solid;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 
     @media (max-width: 600px) {
         width: 100%;
@@ -89,8 +94,7 @@ const StyledCharacter = Styled.div`
 
 const CharacterText = Styled.p`
     text-align: center;
-    font-family: cursive;
-    font-weight: bold;
+    font-style: italic;
     font-size: 1em;
     color: #08415C;
     margin-top: 10px;
@@ -114,6 +118,13 @@ const StyledBackgroundImg = Styled.img`
     height: auto;
     margin: 0 20px;
     object-fit: cover;
+`;
+
+const StyledFootNav = Styled.div`
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export default function Bts() {
@@ -179,13 +190,13 @@ export default function Bts() {
                     I wrote this collection on the road. I had a vision of myself being dragged away from the grand ballroom as the ticking clock marched toward twelve, a few moments before everything turned back to dirt. But, my words weren’t magic; they were just real enough to stand across midnights. So, right before all my coachmen transformed into rats, right before I have to leave everything behind, right before my graduation, I wrote down a few melodies. <br />
                     <br />
                     I had some visions: <br />
-                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>Distant Minds: </span><br />
-                    Two friends meeting again in the dead of night as their friendship heads to where the dead things go, <br />
-                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>Koreatown: </span><br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold'}}>Distant Minds: </span><br />
+                    Two friends reuniting in the dead of night as their friendship heads to where the dead things go, <br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold'}}>Koreatown: </span><br />
                     Chosen chaos, a new city, and, running on rooftops, <br />
-                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>The Midnight Friendship Service: </span><br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold'}}>The Midnight Friendship Service: </span><br />
                     An unexpected, vampiric friendship service, <br />
-                    <span style={{marginLeft: '20%', fontWeight: 'bold', textDecoration: 'underline'}}>The Laundromat: </span><br />
+                    <span style={{marginLeft: '20%', fontWeight: 'bold'}}>The Laundromat: </span><br />
                     Dreamings of what a friendship could have been if life was kinder. <br />
                     <br />
                     This collection of poems is about the closest friendships, some more tender, some more tragic. It is for those who find themselves coping more than healing. These explored perspectives came from a boy trying to express something no one taught him how to say. So, I hope you will be kind. I hope you give them a chance. I hope the words take you back to your own days before midnight. Even someday, when all has turned to dirt, I hope you save them a space in your careful minds. <br />
@@ -195,9 +206,16 @@ export default function Bts() {
                 <StyledBackgroundImg src='./hw7.jpg' alt='background' style={{margin: '20px', width: '100px'}}/>
             </StyledLetter>
 
-            <StyledText>
-                for the boy who was scared of making friends just to lose them <br />
-            </StyledText>
+            <StyledDiv>
+                <StyledText style={{fontStyle: 'italic', margin: '0px 5px', fontSize: '.5em'}}>
+                    for the boy who was scared of making friends just to lose them <br />
+                </StyledText>
+            </StyledDiv>
+            
+            <StyledFootNav>
+                <Link to="/original" style={{textAlign: 'left'}}>&rarr; Original Pages</Link>
+                <Link to="/contents" style={{textAlign: 'right'}}>&rarr; All Contents</Link>
+            </StyledFootNav>
             
         </div>
     );

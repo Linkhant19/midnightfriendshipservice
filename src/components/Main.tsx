@@ -13,6 +13,7 @@ import Bts from './Bts';
 import PoemFive from './PoemFive';
 import PoemSix from './PoemSix';
 import PoemSeven from './PoemSeven';
+import OriginalPages from './OriginalPages';
 
 export default function Main() {
     return (
@@ -28,6 +29,7 @@ export default function Main() {
                 <Route path='/poem4' element={<PoemFour />} />
 
                 <Route path='/bts' element={<Bts />} />
+                <Route path='/original' element={<OriginalPages />} />
 
                 <Route path='/poem5' element={<PoemFive />} />
                 <Route path='/poem6' element={<PoemSix />} />
