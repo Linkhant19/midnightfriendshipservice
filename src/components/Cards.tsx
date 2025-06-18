@@ -87,6 +87,23 @@ const StyledSpan = Styled.span`
     color: #777777;
 `;
 
+const StyledShareButton = Styled.button`
+  margin-top: 5px;
+  background-color: #3E7CB1;
+  color: #FEF9FF;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #2a5a82;
+  }
+`;
+
+
 export default function Cards() {
     // initialize list of cards with images, alt, and poem they belong to
     const cards = [
@@ -249,16 +266,26 @@ export default function Cards() {
                         </StyledCard>
 
                         <StyledDesc>
-                            {/* <a
-                                href={card.img} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                style={{ color: '#08415C' }}
+                            <Link to={`/${card.poem}`} style={{ cursor: 'pointer' }}>
+                                <StyledSpan>sent from: </StyledSpan>{card.poem_name}
+                            </Link>
+
+                            <StyledShareButton
+                                onClick={() => {
+                                if (navigator.share) {
+                                    navigator.share({
+                                    title: card.poem_name,
+                                    text: `Check out this poem "${card.poem_name}"!`,
+                                    url: window.location.origin + `/${card.poem}`,
+                                    }).catch(err => console.error('Share failed:', err));
+                                } else {
+                                    alert("Sharing is not supported in your browser.");
+                                }
+                                }}
                             >
-                                open image
-                            </a> */}
-                            <Link to={`/${card.poem}`} style={{ cursor: 'pointer' }}> <StyledSpan>sent from: </StyledSpan>{card.poem_name}</Link>
-                        </StyledDesc>    
+                                📤 Share
+                            </StyledShareButton>
+                        </StyledDesc>  
                     </StyledCardContainer>
                 ))}
             </GallaryDiv>
