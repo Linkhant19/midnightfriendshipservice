@@ -73,6 +73,19 @@ const StyledLabel = Styled.label`
     font-size: .8em;
 `;
 
+const StyledButton = Styled.button`
+    background-color: white;
+    border: 1px solid #08415C;
+    color: #08415C;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+`;
+
 export default function Form({ poem } : { poem: string }) {
     const form = useRef<HTMLFormElement>(null);  
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -122,7 +135,7 @@ export default function Form({ poem } : { poem: string }) {
                 ) : (
                     <>
                         <StyledMessage className="success-message">Thanks for your feedback! ⁠♡ It means a lot. </StyledMessage>
-                        <button type="button" onClick={resetForm}>Send Another Message</button>
+                        <StyledButton type="button" onClick={resetForm}>Send Another Message!</StyledButton>
                     </>
                 )}
             </form>
