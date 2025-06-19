@@ -3,6 +3,7 @@
 import Styled from 'styled-components';
 import Credits from './Credits';
 import { Link } from 'react-router-dom';
+import Form from './Form';
 
 const StyledDiv = Styled.div`
     display: flex;
@@ -291,6 +292,12 @@ export default function PoemFour() {
                     </StyledCard>
                 ))}
             </CardCollection>
+
+            <br />
+            <br />
+
+            <StyledSubtitle><StyledSpan>send a private message/comment:</StyledSpan></StyledSubtitle>
+            <Form poem='The Laundromat'/>
 
             <br />
             <br />

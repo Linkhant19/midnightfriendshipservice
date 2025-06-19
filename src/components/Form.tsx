@@ -4,12 +4,26 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Styled from 'styled-components';
 
+const StyledDiv = Styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 10px auto;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+`;
+
 const StyledTextArea = Styled.textarea`
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    height: 50px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #08415C;
+    border: 1px solid #08415C;
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: 16px;
@@ -17,13 +31,49 @@ const StyledTextArea = Styled.textarea`
     resize: none;
 `;
 
+const StyledInput = Styled.input`
+    width: 80%;
+    height: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #08415C;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #08415C;
+`;
+
+const StyledInputTwo = Styled.input`
+    width: 20%;
+    height: 10px;
+    padding: 12px 20px 28px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #08415C;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: .8em;
+    color: #08415C;
+
+    @media (max-width: 600px) {
+        width: 50.525%;
+    }
+`;
+
 const StyledMessage = Styled.p`
     color: #08415C;
     margin: 30px 0px 30px 15px;
-    font-size: 1.2em;
+    font-size: .8em;
 `;
 
-export default function Form() {
+const StyledLabel = Styled.label`
+    width: 20%;
+    color: #08415C;
+    font-size: .8em;
+`;
+
+export default function Form({ poem } : { poem: string }) {
     const form = useRef<HTMLFormElement>(null);  
     const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -58,17 +108,24 @@ export default function Form() {
     return (
         <div className="Form-container">
             <form ref={form} onSubmit={sendEmail}>
+                <input type="hidden" name="poem" value={poem} />
                 {!isSubmitted ? (
                     <>
-                        <label>name</label>
-                        <input type="text" name="user_name" required />
-                        <label>message</label>
-                        <StyledTextArea name="message" required />
-                        <input type="submit" value="Send" />
+                        <StyledDiv>
+                            <StyledLabel>name (not required)</StyledLabel>
+                            <StyledInput type="text" name="name" />
+                        </StyledDiv>
+                        
+                        <StyledDiv>
+                            <StyledLabel>message</StyledLabel>
+                            <StyledTextArea name="message" required />
+                        </StyledDiv>
+
+                        <StyledInputTwo type="submit" value="Send" />
                     </>
                 ) : (
                     <>
-                        <StyledMessage className="success-message">Thank you! Your message has been sent successfully.</StyledMessage>
+                        <StyledMessage className="success-message">Thanks for your feedback! ⁠♡ It means a lot. </StyledMessage>
                         <button type="button" onClick={resetForm}>Send Another Message</button>
                     </>
                 )}
