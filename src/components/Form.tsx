@@ -85,19 +85,18 @@ export default function Form({ poem } : { poem: string }) {
         emailjs.sendForm(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            form.current!,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
           
-        .then(
-            () => {
-                console.log('SUCCESS!');
-                setIsSubmitted(true); 
-                form.current?.reset();
-            },
-            (error) => {
-                console.log('FAILED...', error.text);
-            }
-        );
+        .then(() => {
+            console.log("SUCCESS!");
+            setIsSubmitted(true);
+            form.current?.reset();
+        })
+        .catch((error) => {
+            console.error("FULL ERROR OBJECT:", error);
+        });
     };
 
     const resetForm = () => setIsSubmitted(false);
