@@ -187,9 +187,9 @@ export default function Bts() {
                     <StyledBackgroundImg src='./hw6.jpg' alt='background' />
                 </StyledDiv>
                 <StyledText style={{lineHeight: '2em', margin: '0px 5px'}}>
-                    I wrote this collection on the road. I had a vision of myself being dragged away from the grand ballroom as the ticking clock marched toward twelve, a few moments before everything turned back to dirt. But, my words weren’t magic; they were just real enough to stand across midnights. So, right before all my coachmen transformed into rats, right before I have to leave everything behind, right before my graduation, I wrote down a few melodies. <br />
+                    I wrote this collection on the road. I had a vision of myself being dragged away from the grand ballroom as the ticking clock marched toward twelve, fading moments before everything mystical turned back to dirt. Through talking to myself and having honest conversations, I discovered that my words were not special nor magic. But... they were just real enough to stand across the changing of time. So, right before all my coachmen transformed into rodents, right before I have to leave everything behind, right before my graduation, I wrote down a few melodies. <br />
                     <br />
-                    I had some visions: <br />
+                    I had a few stories: <br />
                     <span style={{marginLeft: '20%', fontWeight: 'bold'}}>Distant Minds: </span><br />
                     Two friends reuniting in the dead of night as their friendship heads to where the dead things go, <br />
                     <span style={{marginLeft: '20%', fontWeight: 'bold'}}>Koreatown: </span><br />
@@ -199,7 +199,7 @@ export default function Bts() {
                     <span style={{marginLeft: '20%', fontWeight: 'bold'}}>The Laundromat: </span><br />
                     Dreamings of what a friendship could have been if life was kinder. <br />
                     <br />
-                    This collection of poems is about the closest friendships, some more tender, some more tragic. It is for those who find themselves coping more than healing. These explored perspectives came from a boy trying to express something no one taught him how to say. So, I hope you will be kind. I hope you give them a chance. I hope the words take you back to your own days before midnight. Even someday, when all has turned to dirt, I hope you save them a space in your careful minds. <br />
+                    This collection of poems is about the closest friendships, some more tender, some more tragic. It is for us who find themselves coping more than healing. These explored perspectives came from a boy trying to express something no one taught him how to say. So, I hope you will be kind. I hope you give them a chance. I hope the words take you back to your own days before midnight. Even someday, when all has turned to dirt, I hope you save these memories a space in your careful minds. <br />
                     <br />
                     I have no doubt they will stay, because they are more than some fairy magic. We’ve all bled through the chapters of our own midnight friendship service. <br />
                 </StyledText>

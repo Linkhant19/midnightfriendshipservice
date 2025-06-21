@@ -252,7 +252,7 @@ export default function PoemFour() {
                 being held up only by a friendship service. <br />
                 I know it’s just like a movie, but <br />
                 in another life, <br />
-                I would have really enjoyed <br />
+                I would have really cherished <br />
                 just having deep conversations <br />
                 and playing board games with you.” <br />
             </StyledStanzaTwo>

@@ -265,6 +265,10 @@ export default function PoemThree() {
             <br />
             <hr />
 
+            {/* <StyledStanza style={{fontStyle: 'italic', margin: '0px 5px', fontSize: '.5em'}}>
+                    for the boy who was scared of making friends just to lose them <br />
+            </StyledStanza> */}
+
             <StyledSubtitle><StyledSpan>Cards Collection for: </StyledSpan>The Midnight Friendship Service</StyledSubtitle>
             <CardCollection>
                 {cards.map((card) => (

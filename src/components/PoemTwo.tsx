@@ -141,8 +141,8 @@ export default function PoemTwo() {
             </StyledStanza>
 
             <StyledStanza>
-                He pointed out the balcony smoke. <br />
-                He communicated in poems. <br />
+                Dark blue night sky painted with balcony smoke <br />
+                recaptured in his poems. <br />
                 You learned to love the glimmer of hope <br />
                 as you followed his plans. <br />
             </StyledStanza>
@@ -186,30 +186,30 @@ export default function PoemTwo() {
 
             <StyledStanza>
                 This was the time <br />
-                you felt like a child <br />
-                you got addicted to <br />
-                watching him smile <br />
-                he dragged you through crowds <br />
-                you walked the miles <br />
-                the moment you felt it <br />
+                you felt like a child. <br />
+                You got addicted to <br />
+                watching him smile. <br />
+                He dragged you through crowds. <br />
+                You walked the miles. <br />
+                The moment you felt it, <br />
                 you just knew it’s life. <br />
             </StyledStanza>
 
             <StyledStanza>
                 Oh how he wanted to <br />
-                run on those roofs <br />
-                you said maybe next time <br />
-                and blamed it on the shoes <br />
-                the moon is watching <br />
-                taming your blues <br />
-                he has some midnight demons <br />
+                run on those roofs. <br />
+                You said maybe next time <br />
+                and blamed it on the shoes. <br />
+                The moon is watching, <br />
+                taming your blues. <br />
+                He has some midnight demons <br />
                 but wouldn’t dare burden you. <br />
             </StyledStanza>
 
             <StyledStanza>
                 This is the time <br />
-                oh you feel like a child <br />
-                maybe next time <br />
+                oh you feel like a child. <br />
+                Maybe next time, <br />
                 you will finally bring <br />
                 your bestest shoes. <br />
             </StyledStanza>
