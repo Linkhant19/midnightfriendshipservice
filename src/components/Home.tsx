@@ -63,7 +63,7 @@ const StyledBackgroundImg = Styled.img`
 `;
 
 export default function Home() {
-  const images = ['./cover10.png', 'contents5.png', './cover8.png', './cover4.png', './cover13.png', './cover9.png', './cover12.png'];
+  const images = ['./cover10.png', 'contents5.png', './cover8.png', './cover4.png', './cover9.png', './cover12.png'];
   const [index, setIndex] = useState(0);
 
   const [fade, setFade] = useState(false);
