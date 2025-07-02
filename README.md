@@ -1,6 +1,9 @@
 # The Midnight Friendship Service
 #### a poem collection - written and designed by Lin
 
+<br>
+<br>
+
 A few musical poems I wrote after graduation. It also has a card collection page for some of my drawings. 
 
 This collection is about the closest friendships, <br>
